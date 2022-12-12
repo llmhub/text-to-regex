@@ -1,7 +1,7 @@
 # text-to-regex
 
 <p align="center">
-    <a href="https://www.llmhub.com/abhagsain/ai-cli"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fapi.llmhub.com%2Fshields%2Fstars%2Fvatsalaggarwal%2Ftext-to-regex" alt="LLMHub"></a>
+    <a href="https://www.llmhub.com/2/functions/21/share"><img src="https://img.shields.io/badge/LLMHub%20-%E2%AD%90%EF%B8%8F-brightgreen" alt="LLMHub"></a>
 </p>
 
 Uses GPT-3's latest `text-davanci-003` model via [LLMHub](https://www.llmhub.com) to convert text to Python `re` expressions. 
