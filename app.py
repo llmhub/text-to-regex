@@ -5,16 +5,27 @@ from llmhub.client import Client as LLMHubClient
 
 llm = LLMHubClient("https://www.llmhub.com/2/functions/21/share")
 
-st.title("Text to Python `re` Converter")
-
-text_input = st.text_input("Describe your Regex in plain English (make sure to end it with a .):")
-
 
 @st.cache
 def run_llm(input_data):
     result = llm.run(input_data)
     return result
 
+
+st.set_page_config(page_title="Text-to-Regex", page_icon="🔍")
+
+st.title("Text to Python `re` Converter")
+st.markdown(
+    """ 
+            <p align="center">
+                <a href="https://github.com/llmhub/text-to-regex"><img src="https://badgen.net/badge/icon/GitHub?icon=github&label" alt="GitHub"></a>
+                <a href="https://www.llmhub.com/2/functions/21/share"><img src="https://img.shields.io/badge/LLMHub%20-%E2%AD%90%EF%B8%8F-brightgreen" alt="LLMHub"></a>
+            </p>
+            """,
+    unsafe_allow_html=True,
+)
+
+text_input = st.text_input("Describe your Regex in plain English (make sure to end it with a .):")
 
 if len(text_input) > 0:
     # Run LLM.
@@ -29,11 +40,6 @@ if len(text_input) > 0:
             pass
         else:
             st.write(l)
-
-    # # User Feedback on Results.
-    # feedback_buttons = st.columns(2)
-    # feedback_buttons[0].button("👍")
-    # feedback_buttons[1].button("👎")
 
     # Allow user to input a string to check if it matches their regex.
     regex_check_input = st.text_input("Input a string to check if it matches your regex:")
