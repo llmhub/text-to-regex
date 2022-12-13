@@ -26,6 +26,7 @@ st.markdown(
 )
 
 text_input = st.text_input("Describe your Regex in plain English (make sure to end it with a .):")
+st.write('Tip: begin your description with the word "Match"')
 
 if len(text_input) > 0:
     # Run LLM.
