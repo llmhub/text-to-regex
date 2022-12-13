@@ -6,6 +6,8 @@
 
 Uses GPT-3's latest `text-davanci-003` model via [LLMHub](https://www.llmhub.com) to convert text to Python `re` expressions. 
 
+<img src="https://raw.githubusercontent.com/llmhub/text-to-regex/main/sample.jpg" />
+
 There are two main features:
 - explicit "assumptions". This lets you find errors, and iterate towards getting a final regex that "works".
 - quickly test the regex on the same page and iterate towards
