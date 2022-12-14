@@ -1,6 +1,7 @@
-# text-to-regex
+# [text-to-regex](https://www.text2regex.com)
 
 <p align="center">
+    <a href="https://www.text2regex.com"><img src="https://img.shields.io/badge/text2regex-com-red"></a>
     <a href="https://www.llmhub.com/2/functions/21/share"><img src="https://img.shields.io/badge/LLMHub%20-%E2%AD%90%EF%B8%8F-brightgreen" alt="LLMHub"></a>
 </p>
 
