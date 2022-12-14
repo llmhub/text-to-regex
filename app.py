@@ -25,7 +25,9 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-text_input = st.text_input("Describe your Regex in plain English (make sure to end it with a .):")
+text_input = st.text_input("Describe your Regex in plain English (make sure to end it with a .) :",
+                           "Match any audio file."
+                           )
 st.write('Tip: begin your description with the word "Match"')
 
 if len(text_input) > 0:
@@ -43,7 +45,9 @@ if len(text_input) > 0:
             st.write(l)
 
     # Allow user to input a string to check if it matches their regex.
-    regex_check_input = st.text_input("Input a string to check if it matches your regex:")
+    regex_check_input = st.text_input("Input a string to check if it matches your regex:",
+                                      "a/b/tmp.mp3"
+                                      )
     if len(regex_check_input) > 0:
         regex = re.search("Regex: `(.*)`", output.strip()).group(1)
 
